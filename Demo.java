@@ -1,13 +1,10 @@
-// BK
+// BL
 
 class Demo{
 	public static void main(String [] args){
 		System.out.println("hoi");
-		Wandelaar joost = new Wandelaar();
-		Wandelaar frits = new Wandelaar();
-		frits.a++;
-		frits.wandelen(85);
-		System.out.println(frits.wandelen(4).a);
+		Wandelaar joost = new SnelWandelaar();
+		joost.wandelen(5)
 	}
 }
 class Wandelaar{
@@ -19,4 +16,11 @@ class Wandelaar{
 		System.out.println(a++);
 		return new Wandelaar();
 	}
+}
+class SnelWandelaar{
+	int a;
+	void wandelen(){
+		System.out.println("dat gaat snel");
+	}
+
 }
