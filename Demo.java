@@ -1,4 +1,4 @@
-// BG
+// BH
 
 class Demo{
 	public static void main(String [] args){
@@ -19,7 +19,7 @@ class Demo{
 	}
 }
 class Wandelaar{
-	int a;
+	static int a;
 	void wandelen(){
 		System.out.println(a++);
 	}
