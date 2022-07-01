@@ -1,4 +1,4 @@
-// CB
+// CC
 
 class Demo{
 	public static void main(String[] args){
@@ -12,6 +12,6 @@ class Demo{
 class Fiets{
 
 	public void main(String[] args){
-		throw new RuntimeException();
+		throw new Exception();
 	}
 }
