@@ -1,14 +1,10 @@
-// CK
+// CL
 
 class Demo{
 	public static void main(String[] args)throws Exception{
 		System.out.println("start");
 		Fiets f = new MountainBike();
-		MountainBike m = new MountainBike();
-		f.gaan(5);
-		m.gaan(10);
-		System.out.println(f.snelheid);
-		System.out.println(m.snelheid);
+		System.out.println( f.gaan(3).snelheid );
 
 	}
 }
@@ -16,13 +12,14 @@ class Demo{
 
 abstract class Fiets{
 	int snelheid = 4;
-	abstract void gaan(int snelheid);
+	abstract Fiets gaan(int snelheid);
 }
 
 class MountainBike extends Fiets{
 	int snelheid = 6;
-	void gaan(){
+	MountainBike gaan(int q){
 		System.out.println("mtb");
 		System.out.println(snelheid);
+		return new MountainBike();
 	}
 }
