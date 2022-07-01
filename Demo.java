@@ -1,9 +1,9 @@
-// CD
+// CE
 
 class Demo{
 	public static void main(String[] args){
 		System.out.println("start");
-		MountainBike f = new MountainBike();
+		Fiets f = new MountainBike();
 		f.rondFietsen();
 	}
 }
