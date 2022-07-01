@@ -1,4 +1,4 @@
-// CJ
+// CK
 
 class Demo{
 	public static void main(String[] args)throws Exception{
@@ -16,10 +16,7 @@ class Demo{
 
 abstract class Fiets{
 	int snelheid = 4;
-	void gaan(int snelheid){
-		System.out.println("fiets");
-		System.out.println(snelheid);
-	}
+	abstract void gaan(int snelheid);
 }
 
 class MountainBike extends Fiets{
