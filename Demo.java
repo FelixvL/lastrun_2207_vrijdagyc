@@ -1,12 +1,12 @@
-// CG
+// CH
 
 class Demo{
 	public static void main(String[] args)throws Exception{
 		System.out.println("start");
 		Fiets f = new MountainBike();
 		MountainBike m = new MountainBike();
-		f.gaan();
-		m.gaan();
+		f.gaan(5);
+		m.gaan(10);
 		System.out.println(f.snelheid);
 		System.out.println(m.snelheid);
 
@@ -24,7 +24,7 @@ class Fiets{
 
 class MountainBike extends Fiets{
 	int snelheid = 6;
-	void gaan(){
+	void gaan(int snelheid){
 		System.out.println("mtb");
 		System.out.println(snelheid);
 	}
