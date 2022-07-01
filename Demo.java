@@ -1,4 +1,4 @@
-// BH
+// BI
 
 class Demo{
 	public static void main(String [] args){
@@ -6,21 +6,13 @@ class Demo{
 		Wandelaar joost = new Wandelaar();
 		Wandelaar frits = new Wandelaar();
 		frits.a++;
-		frits.wandelen();
-		gaan();
-		System.out.println(joost.a);
-		System.out.println(frits.a);
-	}
-	static void gaan(){
-		System.out.println("iets");
-		Wandelaar w = new Wandelaar();
-		w.wandelen();
-		System.out.println(w.a);
+		System.out.println(frits.wandelen());
 	}
 }
 class Wandelaar{
 	static int a;
-	void wandelen(){
+	Wandelaar wandelen(){
 		System.out.println(a++);
+		return new Wandelaar();
 	}
 }
