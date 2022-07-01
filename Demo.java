@@ -1,18 +1,21 @@
-// BF
+// BG
 
 class Demo{
 	public static void main(String [] args){
 		System.out.println("hoi");
-		Wandenlaar joost = new Wandelaar();
-		Wandenlaar frits = new Wandelaar();
+		Wandelaar joost = new Wandelaar();
+		Wandelaar frits = new Wandelaar();
 		frits.a++;
-		frits.a++;
+		frits.wandelen();
+		gaan();
 		System.out.println(joost.a);
 		System.out.println(frits.a);
 	}
-	void gaan(){
+	static void gaan(){
 		System.out.println("iets");
-		new Wandelaar().wandelen();
+		Wandelaar w = new Wandelaar();
+		w.wandelen();
+		System.out.println(w.a);
 	}
 }
 class Wandelaar{
