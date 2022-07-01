@@ -1,12 +1,14 @@
-// BE
+// BF
 
 class Demo{
 	public static void main(String [] args){
 		System.out.println("hoi");
-		int a = 5;
-		System.out.println(a++);
-		new Demo.gaan();
-		System.out.println(a);
+		Wandenlaar joost = new Wandelaar();
+		Wandenlaar frits = new Wandelaar();
+		frits.a++;
+		frits.a++;
+		System.out.println(joost.a);
+		System.out.println(frits.a);
 	}
 	void gaan(){
 		System.out.println("iets");
@@ -14,8 +16,8 @@ class Demo{
 	}
 }
 class Wandelaar{
-	double a;
+	int a;
 	void wandelen(){
-		System.out.println(a);
+		System.out.println(a++);
 	}
 }
