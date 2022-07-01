@@ -1,4 +1,4 @@
-// BM
+// BO
 
 class Demo{
 	public static void main(String [] args){
@@ -9,7 +9,7 @@ class Demo{
 }
 class Wandelaar{
 	int a;
-	Wandelaar(){
+	Wandelaar(int z){
 		System.out.println("ik ben er");
 	}
 	Wandelaar wandelen(int a){
@@ -19,8 +19,13 @@ class Wandelaar{
 }
 class SnelWandelaar extends Wandelaar{
 	int a;
-	void wandelen(int b){
+	Wandelaar wandelen(int b){
 		System.out.println("dat gaat snel");
+		return null;
 	}
 
 }
+//1 zelfde sig
+//2 returntype covariant
+//3 access modifier NIET kleiner
+//4 throws covariant
