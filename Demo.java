@@ -1,4 +1,4 @@
-// CI
+// CJ
 
 class Demo{
 	public static void main(String[] args)throws Exception{
@@ -14,7 +14,7 @@ class Demo{
 }
 
 
-class Fiets{
+abstract class Fiets{
 	int snelheid = 4;
 	void gaan(int snelheid){
 		System.out.println("fiets");
