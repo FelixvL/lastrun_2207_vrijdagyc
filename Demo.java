@@ -1,24 +1,31 @@
-// CF
+// CG
 
 class Demo{
 	public static void main(String[] args)throws Exception{
 		System.out.println("start");
 		Fiets f = new MountainBike();
-		f.rondFietsen();
+		MountainBike m = new MountainBike();
+		f.gaan();
+		m.gaan();
+		System.out.println(f.snelheid);
+		System.out.println(m.snelheid);
+
 	}
 }
 
 
 class Fiets{
-
-	public void rondFietsen()throws Exception{
-		System.out.println("in fiets");
-		throw new Exception();
+	int snelheid = 4;
+	void gaan(){
+		System.out.println("fiets");
+		System.out.println(snelheid);
 	}
 }
 
-class MountainBike{
-	void rondFietsen(){
-		System.out.println("in mtb");
+class MountainBike extends Fiets{
+	int snelheid = 6;
+	void gaan(){
+		System.out.println("mtb");
+		System.out.println(snelheid);
 	}
 }
