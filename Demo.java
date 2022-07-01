@@ -1,10 +1,10 @@
-// BL
+// BM
 
 class Demo{
 	public static void main(String [] args){
 		System.out.println("hoi");
 		Wandelaar joost = new SnelWandelaar();
-		joost.wandelen(5)
+		joost.wandelen(5);
 	}
 }
 class Wandelaar{
@@ -17,9 +17,9 @@ class Wandelaar{
 		return new Wandelaar();
 	}
 }
-class SnelWandelaar{
+class SnelWandelaar extends Wandelaar{
 	int a;
-	void wandelen(){
+	void wandelen(int b){
 		System.out.println("dat gaat snel");
 	}
 
